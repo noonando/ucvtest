@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    container_name: appt-mgr
+    image: ufis/docker-appt-mgr-image
+    ports:
+      - 3070:80
+    volumes:
+      - "./:/var/www"

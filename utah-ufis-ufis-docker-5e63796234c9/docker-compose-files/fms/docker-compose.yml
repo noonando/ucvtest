@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    container_name: fms
+    image: ufis/docker-fms-image
+    ports:
+      - 3070:80
+    volumes:
+      - "./:/var/www"
